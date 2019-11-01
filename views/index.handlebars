@@ -1,0 +1,56 @@
+<div class="container">
+	<div class="text-center">
+	  <img src="assets/images/burger.jpg" class="rounded" alt="Burger Image">
+	</div>
+
+	<h1 class="text-center">ARE YOU READY FOR BURGER TIME?!</h1>
+	<!-- Row for list of burgers entered -->
+	<div class="row">
+		<!-- Left list: Burgers entered, but not devoured yet -->
+		<div class="col-md-5 burger-box" id="not-devoured">
+			
+			<ul class="list-group">
+			  {{#each burgers}}
+			  	{{#unless devoured}}
+						{{> burgers/burgerNotDevoured-block}}
+					{{/unless}}
+			  {{/each}}
+			</ul>
+		</div>
+
+		
+		<div class="col-md-2" id="blank">
+		</div>
+
+		<!-- Right list: Burgers devoured -->
+		<div class="col-md-5 burger-box" id="devoured">
+			<ul class="list-group">
+				{{#each burgers}}
+					{{#if devoured}}
+						{{> burgers/burgerDevoured-block}}
+					{{/if}}
+				{{/each}}
+			</ul>
+		</div>
+	</div>
+
+	<!-- Row for textbox to enter in new burger -->
+	<div class="row justify-content-center bottom">
+		<div class="col-md-5">
+			<form class="create-form">
+				<div class="form-group">
+					<input class="form-control form-control-lg" type="text" name="burger_name" id="burgerInfo" placeholder="Type in the name of your burger here!">
+					<br>
+					<button type="submit" class="btn btn-primary btn-lg burger-button">Submit</button>
+
+					<p class="text-center directions">Type in the name of a burger you want to eat, then click "submit".</p>
+				</div>
+			</form>
+		</div>
+	</div>
+	
+  <div class="footer">
+		<p>&#169; Copyright 2019 Burger Life</p>
+  </div>
+</div>
+
