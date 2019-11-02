@@ -1,5 +1,6 @@
 # IT IS BURGER TIME
 
+![](public/assets/images/screen.jpg)
 
 ## Built With
 * Express
