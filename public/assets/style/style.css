@@ -1,0 +1,45 @@
+body {
+    background-image:  url(../images/burger.jpg);
+    background-size: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font: bold;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+     }
+
+  .container-fluid {
+    background-color: rgb(167, 163, 160);
+   margin-top: 10%;
+   margin-bottom: 10%;
+    margin-left: 50px !important;
+    margin-right: 50px !important;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+
+      h1 {
+          color: crimson;
+          font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+         text-align: center;
+         font-size: 350% !important;
+         
+      }
+
+      .btn-primary {
+        color: #fff;
+        background-color: crimson;
+        border-color: crimson;
+    }
+
+      
+      .footer {
+          background-color: khaki !important;
+          background-size: 100% !important;
+          padding: 5px;
+          position: fixed;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+         
+      }
+
